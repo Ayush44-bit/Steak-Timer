@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rare Steak Timer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 class="title">RARE STEAK</h1>
+    <div class="panel">
+        <h2>Cooking Instructions</h2>
+        <p>Cook for 1.5–2 minutes per side on high heat. Outside seared, inside bright red and cool. Internal Temperature should be 120–125°F (49–52°C)</p>
+        <h2>Resting Time</h2>
+        <p>Let the steak rest for 5 minutes before serving to allow the juices to redistribute.</p>
+        <h2>Total Time</h2>
+        <p>Approximately 9–11 minutes (including resting).</p>
+        <div class="timer-container" data-duration="600">
+            <div class="circular-timer">
+              <svg class="progress-ring" width="220" height="220">
+                <circle class="progress-ring__background" cx="110" cy="110" r="100" />
+                <circle class="progress-ring__circle" cx="110" cy="110" r="100" />
+              </svg>
+
+              <!-- Place gif and time together for perfect centering -->
+              <div class="timer-content">
+                <img src="images/rare.png" data-anim="images/animation.GIF" data-still="images/rare.PNG" alt="Cooking steak" class="steak-gif"/>
+                <div class="time-display" id="time">10:00</div>
+              </div>
+            </div>
+
+            <div class="buttons">
+              <button class="startBtn">Start</button>
+              <button class="resetBtn">Reset</button>
+            </div>
+          </div>
+      </div>
+      <script src="javascript/script.js"></script>
+      <audio id="alarmSound" src="sounds/alarm.mp3" preload="auto"></audio>
+</body>
+</html>
